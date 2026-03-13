@@ -82,5 +82,7 @@ const compararEscolas = (esc1, esc2) => {
 
 
 /* ===== NOVA CONSULTA ===== */
+function limparCampos(){
 
+}
 
