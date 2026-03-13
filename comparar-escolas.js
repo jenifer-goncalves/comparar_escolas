@@ -26,19 +26,24 @@ class Senai {
 
 
 /* ===== OBTER ELEMENTOS ===== */
-const inputCidade = document.querySelector('.unidade__input unidadeA__cidade');
-const inputCod = document.querySelector('.unidade__input unidadeA__codigo');
-const inputAno = document.querySelector('.unidade__input unidadeA__ano');
-const inputQtde = document.querySelector('.unidade__input unidadeA__cursos');
+const inputCidadeA = document.querySelector('.unidade__input unidadeA__cidade');
+const inputCodA = document.querySelector('.unidade__input unidadeA__codigo');
+const inputAnoA = document.querySelector('.unidade__input unidadeA__ano');
+const inputQtdeA = document.querySelector('.unidade__input unidadeA__cursos');
+
+const inputCidadeB = document.querySelector('.unidade__input unidadeB__cidade');
+const inputCodB = document.querySelector('.unidade__input unidadeB__codigo');
+const inputAnoB = document.querySelector('.unidade__input unidadeB__ano');
+const inputQtdeB = document.querySelector('.unidade__input unidadeB__cursos');
 
 
 
 /* ===== FUNÇÃO DE VALIDAÇÃO ===== */
+
+// Estudar isso no almoço urgente!
+// Lógica: Aqui eu quero verificar todos os inputs, independente se é A ou B, pq aqui eu não vou adicionar
 function obterInfos(){
-  const cid = 
-  const cod = 
-  const anoCons =
-  const qtCursos = 
+  const inputs = document.querySelectorAll('.unidade__input');
 
   if (isNaN(cid) || isNaN(cod) || isNaN(anoCons) || isNaN(qtCursos)) {
     mostrarResultado('Por favor, preencha os campos.');
@@ -50,10 +55,12 @@ function obterInfos(){
 
 
 /* ===== INSTANCIAR ESCOLA A ===== */
+const escolaA = new Senai(codigo, cidade, anoConstrucao, qtdeCursos);
+
 
 
 /* ===== INSTANCIAR ESCOLA B ===== */
-
+const escolaB = new Senai(codigo, cidade, anoConstrucao, qtdeCursos);
 
 /* ===== ABRIR ESCOLA ===== */
 
